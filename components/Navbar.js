@@ -4,9 +4,13 @@ import Link from "next/link";
 function Navbar() {
     return (
         <>
-            <header>
-                <nav>
-                <Link href={`/`} passHref><div className="flex items-center"><Image src={`https://raw.githubusercontent.com/thirdweb-dev/typescript-sdk/main/logo.svg`} alt='thirdweb/logo' width={45} height={43} priority decoding="async" style={{objectFit: 'cover'}} /> <span className="text-2xl text-slate-300 font-bold ml-2">NFTs</span></div></Link>
+            <header className="border border-l-0 border-r-0 border-t-0 bg-[#1B2129] border-white/10 h-[9vh] flex items-center justify-center"> 
+                <nav className="flex items-center justify-between w-10/12 m-auto">
+                    <Link href={`/`} passHref><div className="flex items-center"><Image src={`https://raw.githubusercontent.com/thirdweb-dev/typescript-sdk/main/logo.svg`} alt='thirdweb/logo' width={45} height={43} priority decoding="async" style={{objectFit: 'cover'}} /> <span className="text-2xl text-slate-300 font-bold ml-2">NFTs</span></div></Link>
+
+                    <ul className="flex items-center">
+                        <button type="button" className="text-lg text-blue-600 ring-2 ring-blue-600 rounded-lg px-5 py-1.5">Connect Wallet</button>
+                    </ul>
                 </nav>
             </header>
         </>
