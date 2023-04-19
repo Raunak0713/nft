@@ -1,3 +1,4 @@
+import Analytics from "./Analytics";
 import Hero from "./Hero";
 
 export default function Dashboard() {
@@ -6,7 +7,7 @@ export default function Dashboard() {
             <main className="h-screen overflow-y-scroll scroll-style">
                 <div className="w-10/12 lg:w-11/12 mr-auto ml-auto mt-[12vh]">
                     <Hero />
-                    {/* Analytics */}
+                    <Analytics />
                     {/* NFTs */}
                 </div>
             </main>
