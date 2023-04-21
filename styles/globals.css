@@ -36,7 +36,7 @@
   .onpopupnotshow {
     opacity: 0;
     visibility: hidden;
-    transform: skewY(-5deg) rotate(5deg) translateY(-30px);
+    transform: skewY(0deg) rotate(0def) translateY(-30px);
   }
 
 }
